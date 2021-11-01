@@ -1,0 +1,8 @@
+broker:
+  url: tcp://hivemq:1883
+group: foo
+nodes:
+  - name: bar
+    devices:
+      - name: bat
+        type: climatecontrol

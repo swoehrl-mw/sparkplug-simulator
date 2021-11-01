@@ -1,0 +1,19 @@
+[package]
+name = "sparkplug-simulator"
+authors = ["Sebastian Woehrl <sebastian.woehrl@maibornwolff.de>"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+prost = "0.9"
+prost-types = "0.9"
+paho-mqtt = {version = "0.9", default-features=false, features = ["bundled"]}
+yaml-rust = "0.4.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"
+rand = "0.8"
+lazy_static = "1.4"
+ctrlc = "3.2.1"
+
+[build-dependencies]
+prost-build = "0.9.0"
